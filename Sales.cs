@@ -10,6 +10,11 @@ namespace HurdleTask
     {
         private List<Thing> orders = new List<Thing>();
 
+        public Sales()
+        {
+            orders = new List<Thing>();
+        }
+
         public void Add(Thing order)
         {
             orders.Add (order);

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,8 +9,8 @@ namespace HurdleTask
 {
     public class Batch : Thing
     {
-        public Batch(string number, string name) :
-            base(number, name)
+        public Batch(string number, string name, decimal item = 0) :
+            base(number, name, item)
         {
         }
 
@@ -20,7 +21,7 @@ namespace HurdleTask
 
         public override void Print()
         {
-            Console.WriteLine($"Batch sale: #{Number}, {Name}");
+            Console.WriteLine($"Batch: {Name}");
         }
     }
 }
