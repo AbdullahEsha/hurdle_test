@@ -9,9 +9,12 @@ namespace HurdleTask
 {
     public class Batch : Thing
     {
-        public Batch(string number, string name, decimal item = 0) :
-            base(number, name, item)
+        private List<Thing> items;
+
+        public Batch(string number, string name) :
+            base(number, name)
         {
+            items = new List<Thing>();
         }
 
         public override decimal Total()

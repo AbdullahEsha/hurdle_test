@@ -12,13 +12,10 @@ namespace HurdleTask
 
         public string Name { get; set; }
 
-        public decimal Item { get; set; }
-
-        public Thing(string number, string name, decimal item = 0)
+        public Thing(string number, string name)
         {
             Number = number;
             Name = name;
-            Item = item;
         }
 
         public abstract decimal Total();

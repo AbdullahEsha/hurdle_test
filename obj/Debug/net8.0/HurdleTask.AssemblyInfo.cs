@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HurdleTask")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12a198b744b00c2c0228f4607a61d4264448f4d9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0088e2a3aa867726f549a8cf002ce05bd13f2df")]
 [assembly: System.Reflection.AssemblyProductAttribute("HurdleTask")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HurdleTask")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
