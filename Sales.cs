@@ -22,33 +22,19 @@ namespace HurdleTask
 
         public void PrintOrders()
         {
-            Console.WriteLine("Sales:");
-            decimal total = 0;
             foreach (Thing order in orders)
             {
-                if (order is Batch)
-                {
-                    if (total > 0)
-                    {
-                        Console.WriteLine($"Total: {total:C2}");
-                        total = 0;
-                    }
-                    order.Print();
-                }
-                else
-                {
-                    total += order.Total();
-                    order.Print();
-                }
-            }
-            if (total > 0)
-            {
-                Console.WriteLine($"Total: {total:C2}");
+                order.Print();
             }
 
-            Console
-                .WriteLine($"Sales total: {
-                    orders.Sum(order => order.Total()):C2}");
+            decimal total = 0;
+
+            foreach (Thing order in orders)
+            {
+                total += order.Total();
+            }
+
+            Console.WriteLine($"Total: {total:C2}");
         }
     }
 }
